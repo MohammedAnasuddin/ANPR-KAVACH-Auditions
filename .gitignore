@@ -1,0 +1,157 @@
+# .gitignore
+#
+# This file tells Git which files and directories to ignore.
+# Use it to avoid committing generated files, dependencies, and private data.
+
+### General ###
+# Compiled source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs and databases #
+*.log
+*.sql
+*.sqlite
+
+# OS-generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### IDEs / Editors ###
+# VSCode #
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, etc.) #
+.idea/
+
+# Sublime Text #
+*.sublime-project
+*.sublime-workspace
+
+# Atom #
+.atom/
+
+### Language / Framework Specific ###
+
+# Node.js #
+node_modules/
+dist/
+build/
+coverage/
+.npm
+*.tgz
+
+# Python #
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Java #
+*.jar
+*.war
+*.ear
+target/
+.classpath
+.project
+.settings
+
+# Maven #
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle #
+.gradle
+build/
+
+### Machine Learning / TensorFlow ###
+
+# Python Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Datasets & Assets
+# It's better to store large datasets and assets outside of Git.
+# Add your data folders here. For example:
+# TFODCourse/Tensorflow/workspace/images/
+# TFODCourse/Tensorflow/workspace/annotations/
+
+# The request.json file contains data (a base64 image), not source code.
+TFODCourse/Tensorflow/models/research/marco/request.json
+
+# Protobuf compiler and generated files
+# You should commit the .proto files, not the generated Python files.
+TFODCourse/Tensorflow/protoc/
+*_pb2.py
+*_pb2.pyi
+*_pb2_grpc.py
+
+# Model checkpoints, logs, and saved models
+# These can be very large and are generated during training.
+TFODCourse/Tensorflow/workspace/models/
+TFODCourse/Tensorflow/workspace/exported-models/
+TFODCourse/Tensorflow/workspace/pre-trained-models/
+*.ckpt
+*.ckpt.meta
+*.ckpt.index
+*.pb
+*.pbtxt
+*.tflite
+*.h5
+
+# Tensorboard logs
+TFODCourse/Tensorflow/workspace/logs/
+/anprsys
+*.jpg
+/Tensorflow/workspace/images
